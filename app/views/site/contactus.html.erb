@@ -1,0 +1,49 @@
+<h1>ContactUS</h1><br>
+
+<html>
+<head>
+<script
+src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+function initialize() {
+  var mapProp = {
+    center:new google.maps.LatLng(51.508742,-0.120850),
+    zoom:5,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<div id="googleMap" style="width:500px;height:380px;"></div>
+
+
+
+
+<p><h3> FeedBack Form </h3></p>
+<form>
+  FirstName: <br>
+  <input type = "text" name ="firstname"><br>
+  LastName: <br>
+  <input type = "text" name = "Lastname"><br>
+  Email-id: <br>
+  <input type ="text" name = "Email-id"><br>
+  <input type ="radio" name = "sex" value = "male" checked >Male<br>
+  <input type ="radio" name = "sex" value = "Female" >Female
+  <br><br>
+ 
+
+ <input type =" Submit" value ="Submit ">
+ 
+
+</form>
+
+ 
+
+</body>
+</html>

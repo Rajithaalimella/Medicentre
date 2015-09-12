@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>MedicalCentre</title>
+ <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+ <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+ <%= csrf_meta_tags %>
+</head>
+<body>
+ <div id='header'>
+ <!-- Header Image Displayes here -->
+ </div>
+ <div id='menu'>
+ <div id="navbar">
+<ul>
+
+<li><a href="/home">Home</a></li>
+<li><a href="/about">AboutUS</a></li>
+<li><a href="/contact">Contact Us</a></li>
+<li><a href="/team">Team</a></li>
+<li><a href="/Admin">Login</a></li>
+<li><a href="/logout">Logout</a></li>
+</ul>
+<div id="navbar">
+<ul>
+
+</ul>
+</div>
+ </div>
+ </div>
+ <div id='container'>
+ <div id='content'>
+ <p class="notice"><%= flash[:notice] %></p>
+ <%= yield %>
+</div>
+ 
+ </div>
+ </div>
+
+ <div id='footer'>
+ <h6 class="footertext">&copy; Online Medical Center; 2015</h6>
+ </div>
+</body>
+</html>
