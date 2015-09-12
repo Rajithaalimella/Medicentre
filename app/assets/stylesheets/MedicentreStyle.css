@@ -99,7 +99,7 @@ div#content {
     min-height: 700px;
     width: 970px;
 }
-div#header,
+div#imgheader,
 div#footer,
 div#menu {
     background: rgb(20, 20, 20);
@@ -114,7 +114,7 @@ div#menu {
     width: 1024px;
     height: 28px;
 }
-div#header {
+div#imgheader {
     border-bottom: none;
     background-image: url("/assets/Site/header.png") ;
     width: 1090px;
